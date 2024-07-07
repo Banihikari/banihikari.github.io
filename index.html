@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blue Navbar</title>
+  <title>My website</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -11,7 +11,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Two Column Layout</title>
   <!-- Bootstrap CSS -->
+  <link rel="icon" href="img/logo jaz.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  <style>
+
+
     section {
       position: relative;
       padding: 10em 0;
@@ -32,33 +35,45 @@
   <!-- bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   
+  
+
+  
 </head>
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <a class="navbar-brand" href="#">portofolio🐉</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#skil">Skil</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
+          <div class="dropdown">
+            <a class="btn btn-info-subtle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="movie.html">Movie</a></li>
+    
+            </ul>
+          </div>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#">
             <img src="https://via.placeholder.com/40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+            
           </a>
         </li>
       </ul>
@@ -67,14 +82,16 @@
 
       <!--  -->
       
-      <section class="bg-info-subtle">
+      <section class="bg-info-subtle" id="home">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 text-end mt-4">
+            <div class="col-md-6 text-center text-md-end my-4">
               <!-- Content for the first column -->
               <h4 class="display-4">Hei my name M.Hikari</h4>
               <h1 class="display-6">Im <span class="text-info">Fullstack Developer</span></h1>
-              <button class="btn btn-info mt-4 rounded-5 px-4">Call me</button>
+              <div class="container mt-5">
+                <a href="https://www.instagram.com/hikari_1453/" class="btn btn-info mt-4 rounded-5 px-4">Call me</a>
+              </div>
             </div>
             <div class="col-md-6 text-center">
               <!-- Content for the second column -->
@@ -103,7 +120,7 @@
           <div class="row d-flex justify-content-center">
             <div class="col-md-6 mx-auto text-center mt-4">
               <!-- Content for the column -->
-              <h4 class="display-4"><b>Tentang saya?</b></h4>
+              <h4 class="display-4" id="about"><b>Tentang saya?</b></h4>
               <p class="px-5 mx-5 mt-4">aspernatur nisi. Nesciunt, architecto nulla.</p>
               </section>
               
@@ -147,7 +164,7 @@
             </section>
 
             <section>
-              <div class="container">
+              <div class="container" id="skil">
                 <div class="row">
                   <div class="col-md-8">
                     <h5 class="text-center">Education</h5>
@@ -238,10 +255,22 @@
                 </div>
               </div>
             </section>
-
+            <!-- sosial media -->
+             <section class="bg-primary-subtle">
+              <div class="contaner">
+                <div class="text-center mb-5">
+                  <h3 class="display-6">Sosial media</h3>
+                  <h5>Youtube - Jaz entertaiment</h5>
+                </div>
+                <div class="row" id="youtubePlaylist">
+                  
+                </div>
+              </div>
+             </section>
             <section>
+
               <div class="container mt-5">
-                <div class="row">
+                <div class="row ">
                     <div class="col-lg-6">
                         <h3>Mari Belajar Teknologi</h3>
                         <h3 class="text-primary">IT nya kita menggunakan aplikasi Visual Studio Code</h3>
@@ -272,6 +301,6 @@
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+  <script src="js/youtube.js"></script>
 </body>
 
